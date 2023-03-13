@@ -61,11 +61,14 @@ export default class Gist {
             headers: this.headers,
         };
 
+
+        console.log(url, options);
+
         return new Promise((resolve, reject) => {
             fetch(url, options)
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data)
+                    //console.log(data);
                     resolve(data);
                 })
                 .catch(error => {
@@ -89,7 +92,7 @@ export default class Gist {
             fetch(url, options)
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data)
+                    //console.log(data);
                     resolve(data);
                 })
                 .catch(error => {
@@ -103,6 +106,7 @@ export default class Gist {
         return new Promise((resolve, reject) => {
             this.post(data)
                 .then(data => {
+                    //console.log(data);
                     resolve(data);
                 })
                 .catch(error => {
@@ -125,7 +129,7 @@ export default class Gist {
             fetch(url, options)
                 .then(response => response.status)
                 .then(data => {
-                    console.log(data)
+                    //console.log(data)
                     resolve(data);
                 })
                 .catch(error => {
