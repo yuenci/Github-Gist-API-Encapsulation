@@ -81,7 +81,7 @@ document.getElementById("id9").addEventListener("click", function () {
 
 window.onload = function () {
     let GIST_TOKEN = localStorage.getItem("GIST_TOKEN");
-    if (GIST_TOKEN) {
+    if (GIST_TOKEN && GIST_TOKEN !== "null") {
         Gist.headers.Authorization = `Bearer ${GIST_TOKEN}`
     } else {
         Gist.GIST_TOKEN = prompt("Please Enter Your GIST_TOKEN");
