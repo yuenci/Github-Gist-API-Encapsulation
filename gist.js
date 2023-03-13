@@ -1,6 +1,8 @@
 export default class Gist {
     static GIST_TOKEN = "GIST_TOKEN";
 
+    // https://docs.github.com/en/rest/gists/gists?apiVersion=2022-11-28
+
     static type = {
         "getGist": "getGist", // https://api.github.com/gists/:gist_id // GET
         "getGists": "getGists", // https://api.github.com/gists // GET
