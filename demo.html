@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #con {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        button {
+            margin: 10px;
+            font-weight: 300;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            appearance: none;
+            cursor: pointer;
+            border: none;
+            box-sizing: border-box;
+            transition-property: all;
+            transition-duration: .3s;
+            background-color: #1B9AF7;
+            border-color: #1B9AF7;
+            color: #FFF;
+            border-radius: 200px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="con">
+        <button id="id1">Get a Gist</button>
+        <button id="id2">Get All Gists</button>
+        <button id="id3">Get All starred Gists</button>
+        <button id="id4">Get History Gist</button>
+        <button id="id5">Create a Gist</button>
+        <button id="id6">Update a Gist</button>
+        <button id="id7">Delete a Gist</button>
+        <button id="id8">Stat a Gist</button>
+        <button id="id9">Unstart a Gist</button>
+    </div>
+    <script src="./gist.js" type="module"></script>
+    <script src="./demo.js" type="module"></script>
+</body>
+
+</html>
